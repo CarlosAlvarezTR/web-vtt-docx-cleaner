@@ -19,19 +19,19 @@ Drop in a `.vtt` file or a Microsoft Teams `.docx` transcript and get back a cle
 
 ```
 00:01:34.000 --> 00:01:38.000
-<v Courson, Josephine>Hi. Hello. Sorry I couldn't figure out the meeting link.
+<v User>Hi. Hello. Sorry I couldn't figure out the meeting link.
 
 00:01:38.000 --> 00:01:39.500
-<v Alvarez, Carlos (TR Product)>Yeah.
+<v Smith, Joe (TR Product)>Yeah.
 
 00:01:39.500 --> 00:01:45.000
-<v Courson, Josephine>But I found it. Good. How are you?
+<v User>But I found it. Good. How are you?
 ```
 
 ### After
 
 ```
-[00:01:34] Josephine: Hi. Hello. Sorry I couldn't figure out the meeting link. But I found it. Good. How are you?
+[00:01:34] User: Hi. Hello. Sorry I couldn't figure out the meeting link. But I found it. Good. How are you?
 ```
 
 ## Supported formats
