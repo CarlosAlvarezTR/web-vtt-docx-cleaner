@@ -2,7 +2,7 @@
 
 A browser-based tool that converts raw interview transcripts into clean, readable text. Built for UX researchers who need to quickly turn auto-generated transcripts into something they can actually work with.
 
-**[Try it live](https://your-username.github.io/transcript-cleaner-web)** (replace with your GitHub Pages URL)
+**[Try it live](https://carlosalvareztr.github.io/web-vtt-docx-cleaner/)**
 
 ---
 
@@ -41,9 +41,16 @@ Drop in a `.vtt` file or a Microsoft Teams `.docx` transcript and get back a cle
 | `.vtt` | WebVTT captions | Standard subtitle format from Zoom, Teams, and other platforms |
 | `.docx` | Microsoft Teams | The Word document Teams generates from a meeting recording |
 
-## Privacy
+## Privacy & Security
 
-Everything runs in your browser. No files are uploaded, no data leaves your device, no server is involved. The `.docx` parsing uses [JSZip](https://stuk.github.io/jszip/) to unzip the file client-side.
+This tool is designed to handle sensitive research data safely. **Your files never leave your device.**
+
+- **No uploads** — transcript files are read directly by your browser using the [File API](https://developer.mozilla.org/en-US/docs/Web/API/File_API). Nothing is sent to a server.
+- **No backend** — the site is purely static HTML, CSS, and JavaScript. There is no server-side code, no database, and no analytics.
+- **No external network calls** — the only external resource loaded is the [JSZip](https://stuk.github.io/jszip/) library (used to unpack `.docx` files client-side). Once the page loads, the tool works fully offline.
+- **All processing in-memory** — file parsing, backchannel removal, speaker merging, and text cleaning all happen in your browser's memory. The cleaned output is generated as a local download via `Blob` URL — it is never transmitted anywhere.
+- **HTTPS by default** — when hosted on GitHub Pages, the site is served over HTTPS. GitHub Pages only serves static files and has no ability to intercept or log file contents.
+- **Open source** — the entire codebase is visible in this repository. You can verify every line of code, or clone and run it locally if preferred.
 
 ## Usage
 
@@ -58,7 +65,7 @@ Everything runs in your browser. No files are uploaded, no data leaves your devi
 No build step, no dependencies to install. Just clone and open:
 
 ```bash
-git clone https://github.com/your-username/transcript-cleaner-web.git
+git clone https://github.com/CarlosAlvarezTR/web-vtt-docx-cleaner.git
 cd transcript-cleaner-web
 open index.html
 ```
