@@ -55,6 +55,28 @@ body {
   align-items: center;
 }
 
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: white;
+  border-radius: var(--radius);
+  font-weight: 600;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 header {
   text-align: center;
   padding: 3rem 1rem 1rem;
@@ -118,6 +140,13 @@ main {
   inset: 0;
   opacity: 0;
   cursor: pointer;
+}
+
+.drop-zone:focus-within {
+  border-color: var(--drop-border);
+  background: var(--drop-bg);
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .drop-icon {
