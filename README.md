@@ -1,6 +1,6 @@
 # Transcript Cleaner
 
-A browser-based tool that converts raw interview transcripts into clean, readable text. Built for UX researchers who need to quickly turn auto-generated transcripts into something they can actually work with.
+A browser-based tool that converts raw interview transcripts into clean, readable text. Built for UX researchers who need to quickly turn auto-generated transcripts into something they can actually work with. Exploratory.
 
 **[Try it live](https://carlosalvareztr.github.io/web-vtt-docx-cleaner/)**
 
